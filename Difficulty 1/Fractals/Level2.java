@@ -16,9 +16,9 @@ public class Level2 {
             sc.close();
             double perimeter = 4 * l * (Math.pow(5,n) / Math.pow(3,n));
             File out = new File(path + ".out");
-            FileWriter writer = new FileWriter(out);
-            writer.write(String.valueOf((int) perimeter));
-            writer.close();
+            FileWriter fw = new FileWriter(out);
+            fw.write(String.valueOf((int) perimeter));
+            fw.close();
         } catch (Exception e) {
             e.printStackTrace();
         }

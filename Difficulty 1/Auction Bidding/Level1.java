@@ -4,10 +4,10 @@ import java.util.Scanner;
 
 public class Level1 {
     public static void main(String[] args) {
-        String path = "./Level 1/1_1";
-        File file = new File(path + ".in");
         try {
-            Scanner sc = new Scanner(file).useDelimiter(",");
+            String path = "./Level 1/1_1";
+            File in = new File(path + ".in");
+            Scanner sc = new Scanner(in).useDelimiter(",");
             int maxBid = sc.nextInt();
             int price = maxBid;
             String maxBidder = null;
@@ -32,9 +32,9 @@ public class Level1 {
             }
             sc.close();
             File out = new File(path + ".out");
-            FileWriter writer = new FileWriter(out);
-            writer.write(maxBidder + "," + String.valueOf(price));
-            writer.close();
+            FileWriter fw = new FileWriter(out);
+            fw.write(maxBidder + "," + String.valueOf(price));
+            fw.close();
         } catch (Exception e) {
             e.printStackTrace();
         }

@@ -5,7 +5,7 @@ import java.util.Scanner;
 public class Level1 {
     public static void main(String[] args) {
         try {
-            String path = "./Level 1/1_4";
+            String path = "./Level 1/1_1";
             File in = new File(path + ".in");
             Scanner sc = new Scanner(in);
             sc.next();

@@ -32,7 +32,7 @@ public class Level2 {
             }
             sc.close();
             File out = new File(path + ".out");
-            FileWriter writer = new FileWriter(out);
+            FileWriter fw = new FileWriter(out);
             fw.write(maxBidder + "," + String.valueOf(price));
             fw.close();
         } catch (Exception e) {

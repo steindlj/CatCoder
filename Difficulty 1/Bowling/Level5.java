@@ -4,8 +4,14 @@ import java.util.Scanner;
 
 public class Level5 {
     public static void main(String[] args) {
+        for (int i = 1; i <= 3; i++) {
+            run(i);
+        }
+    }
+
+    private static void run(int level) {
         try {
-            String path = "./Level 5/5_1";
+            String path = "./Level 5/5_" + String.valueOf(level);
             File in = new File(path + ".in");
             Scanner sc = new Scanner(in).useDelimiter(",|:");
             int n = sc.nextInt();

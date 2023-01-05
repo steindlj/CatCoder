@@ -4,8 +4,14 @@ import java.util.Scanner;
 
 public class Level2 {
     public static void main(String[] args) {
+        for (int i = 1; i <= 2; i++) {
+            run(i);
+        }
+    }
+
+    private static void run(int level) {
         try {
-            String path = "./Level 2/2_1";
+            String path = "./Level 2/2_" + String.valueOf(level);
             File in = new File(path + ".in");
             Scanner sc = new Scanner(in).useDelimiter(",|:");
             int n = sc.nextInt();
@@ -47,5 +53,5 @@ public class Level2 {
         } catch (Exception e) {
             e.printStackTrace();
         }
-    }
+    }   
 }

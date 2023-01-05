@@ -6,10 +6,16 @@ import java.util.Scanner;
 
 public class Level1 {
     public static void main(String[] args) {
+        for (int i = 1; i <= 4; i++) {
+            run(i);
+        }
+    }
+
+    private static void run(int level) {
         try {
-            String path = "./Level 1/1_4";
-            File file = new File(path + ".in");
-            Scanner sc = new Scanner(file);
+            String path = "./Level 1/1_" + String.valueOf(level);
+            File in = new File(path + ".in");
+            Scanner sc = new Scanner(in);
             ArrayList<int[]> sol = new ArrayList<int[]>();
             ArrayList<Integer> list = new ArrayList<Integer>();
             int n = sc.nextInt();

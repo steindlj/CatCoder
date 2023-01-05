@@ -7,10 +7,16 @@ import java.util.Scanner;
 
 public class Level4 {
     public static void main(String[] args) {
+        for (int i = 1; i <= 2; i++) {
+            run(i);
+        }
+    }
+
+    private static void run(int level) {
         try {
-            String path = "./Level 4/4_1";
-            File file = new File(path + ".in");
-            Scanner sc = new Scanner(file);
+            String path = "./Level 4/4_" + String.valueOf(level);
+            File in = new File(path + ".in");
+            Scanner sc = new Scanner(in);
             ArrayList<Integer> list = new ArrayList<>();
             HashMap<int[], int[]> pairs = new HashMap<>();
             int sol = 0;

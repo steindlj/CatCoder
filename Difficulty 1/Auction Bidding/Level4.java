@@ -4,8 +4,14 @@ import java.util.Scanner;
 
 public class Level4 {
     public static void main(String[] args) {
+        for (int i = 1; i <= 7; i++) {
+            run(i);
+        }
+    }
+
+    private static void run(int level) {
         try {
-            String path = "./Level 4/4_7";
+            String path = "./Level 4/4_" + String.valueOf(level);
             File in = new File(path + ".in");
             Scanner sc = new Scanner(in).useDelimiter(",");
             int maxBid = sc.nextInt();

@@ -4,8 +4,14 @@ import java.util.Scanner;
 
 public class Level1 {
     public static void main(String[] args) {
+        for (int i = 1; i <= 4; i++) {
+            run(i);
+        }
+    }
+
+    private static void run(int level) {
         try {
-            String path = "./Level 1/1_1";
+            String path = "./Level 1/1_" + String.valueOf(level);
             File in = new File(path + ".in");
             Scanner sc = new Scanner(in);
             sc.next();

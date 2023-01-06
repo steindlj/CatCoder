@@ -1,3 +1,2 @@
 # CatCoder
-https://catcoder.codingcontest.org/
-Some solutions for CatCoder coding games.
+Some solutions for [CatCoder coding games](https://catcoder.codingcontest.org/).

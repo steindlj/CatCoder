@@ -77,12 +77,12 @@ public class Level5 {
     }
 
     private static boolean sumUp(int payment, ArrayList<Payment> b, int first, int n) {
-        if (payment == b.get(first).amount && !b.get(first).used) {
+        if (payment == b.get(first).amount) {
             b.get(first).used = true;
             return true;
         }
         if (n == 4) {
-            if (payment != b.get(first).amount || b.get(first).used) {
+            if (payment != b.get(first).amount) {
                 return false;
             }
         }
